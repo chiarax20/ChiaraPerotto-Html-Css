@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'/>
+    <title>Chiara_Perotto</title>
+    <link rel='stylesheet' href='stileCss.css'/>
+</head>
+<body>
+ <div class='contenitore-menu'>
+  <div class='menu'>
+   <div class='date'>
+    <span id="datetime"></span>
+     <script>
+     var dt = new Date();
+     document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+    </script>
+  </div>
+  <div class='welcome'> Progetto HTML & CSS </div>
+ </div>
+</div>
+<div class='contenitore-testata'>
+ <div class='testata'>
+   <div class='foto_profilo'><img src='immagini/fotoprofilo.jpg' width='120'/></div>
+   <div class='scritta'> <p> <strong>Ciao, mi chiamo Chiara!</strong> </p></div>
+   <div class='social'>
+     <a class=social1 href="https://www.instagram.com/chiara_cp/" target="_blank"> <img src='immagini/instagram.png' width='50'/></a>
+     <a class=social2 href="https://www.facebook.com/perottochiara" target="_blank"> <img src='immagini/facebook.png' width='50'/></a>
+     <a class=social3 href="https://www.linkedin.com/in/chiara-perotto-70001b1ab/" target="_blank"> <img src='immagini/linkedin.png' width='50'/></a>
+  </div>
+ </div>
+</div>
+<div class='pagina'>
+ <div class='sezione contenuti'>
+   <div class= "form" id="inserimento">
+   <label id=noName></label>
+    <input type="text" id= "idname" placeholder='      Inserisci il tuo nome ' autofocus/>
+    <input type="button" id="bottoneinserisci" value="Invia" onclick="TuoNome()"/>
+   </div>
+   <div class= username>
+    <label id="labelName"> </label>
+   </div>
+ </div>
+ <script>
+    function TuoNome()
+        {
+          var txtname = document.getElementById("idname");
+          var lblname = document.getElementById("labelName");
+              if (txtname.value  === "")
+                  {
+                  noName.innerHTML = "Inserisci il tuo nome!";
+                  }
+              else
+                  {
+                  labelName.innerHTML = "Hey " + txtname.value + ", benvenuto nel mio sito!";
+                  var div =document.getElementById('inserimento');
+                  div.style.display= 'none';
+                  }
+        }
+ </script>
+ <div class='centrale'>
+  <div class='sezione biografia'>
+    <h1><strong> Vuoi sapere qualcosa su di me?</strong></h1>
+    <br/>
+    <p>Ho 28 anni, amo la musica, le serie tv e i libri!
+      <br/>Per quasi dieci anni ho lavorato nel settore della ristorazione come responsabile di sala;
+      un lavoro che sicuramente mi ha insegnato molto, dal rapporto con la clientela all'importanza
+      del lavoro di squadra.
+      Sentendo la necessità di <br/>cambiare e cercare nuovi stimoli,
+      ed  essendo un'appassionata di tecnologia,ho deciso di cogliere l'opportunità che
+     "start2impact" mi ha offerto!<br/>
+      Spero che questo progetto possa darmi grandi soddisfazioni e con questo sito voglio
+      mostrarvi quello che ho imparato nelle prime settimane di corso.</p>
+  </div>
+  <div class='sezione lavoro'>
+    <h1><strong> Nel mio lavoro: </strong></h1>
+    <br/>
+    <p> Sono una persona dinamica, precisa, puntuale, attenta e affidabile con ottime capacità
+    comunicative.<br/> Veloce nell'apprendimento, predisposta alle pubbliche relazioni e
+    capace di lavorare sia da sola che in team.<br/> Ottima attitudine al problem solving e
+    capacità di lavorare sotto stress.
+    Sono alla ricerca di una nuova opportunità professionale che mi permetta di
+    conoscere una realtà lavorativa stimolante e costruttiva per il mio percorso.
+    <div class='curriculum'><a href="CV.pdf" target='_blank'><strong>curriculum</strong></a></div>
+  </div>
+ </div>
+  <div class='contenitore-progetti'> <h1><strong>PROGETTI:</strong></h1>
+   <div class='progetti'>
+    <a class=social4 href="PerottoChiara.html" target="_blank"> <img src='immagini/HTMLCSS.png'  width='150'/></a>
+   </div>
+ </div>
+ <div class="sezione contenitore-foto">
+ <div class='sezione foto'>
+  <img class='dimensioni' src='immagini/fotome3.jpg'  width='150'/>
+  <img class='dimensioni' src='immagini/fotome1.jpg'  width='150'/>
+  <img class='dimensioni' src='immagini/fotome6.jpg'  width='150'/>
+  <img class='dimensioni' src='immagini/fotome7.jpg'  width='150'/>
+  <img class='dimensioni' src='immagini/fotome5.jpg'  width='150'/>
+ </div>
+ </div>
+ <div class='barrafinale'>
+  <div class='contatti'>
+    <div class='contattomail' ><a href="mailto:perottochiara.cp@gmail.com.com" target="_blank"> <img src='immagini/gmaillogo.png' width='50'/> </a></p>
+    <p>perottochiara.cp@gmail.com </p></div>
+   <div class='contattowa'>  <a  href="https://api.whatsapp.com/send?phone=3318831199" target="_blank"> <img src='immagini/walogo.png' width='50'/> </a>
+    <p> 3318831199 </p> </div>
+  </div>
+ </div>
+</div>
+</body>
+</html>
